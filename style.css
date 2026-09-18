@@ -103,3 +103,35 @@
 .copy h2{font-size:23px}
 .copy p{min-height:auto;font-size:12px}
 }
+
+/* Ver.4.1 — collection card typesetting and mobile density */
+@media(min-width:761px){
+.card{height:455px}
+.card-art{inset:10px 8px 33%}
+.copy{bottom:19px}
+.copy:before{margin-bottom:11px}
+.copy h2{margin-bottom:7px}
+.copy p{min-height:48px;line-height:1.55;margin-bottom:9px}
+}
+@media(max-width:760px){
+.catalogue{gap:14px}
+.card{height:405px}
+.card-art{inset:8px 12px 38%}
+.card:after{background:linear-gradient(0deg,rgba(247,240,225,.99) 0 35%,rgba(247,240,225,.92) 43%,rgba(247,240,225,.08) 63%)}
+.num{top:18px;left:22px;font-size:20px}
+.copy{left:22px;right:22px;bottom:17px}
+.copy:before{margin-bottom:10px}
+.copy h2{font-size:21px;margin-bottom:7px}
+.copy p{font-size:11px;line-height:1.55;margin-bottom:9px}
+.copy strong{font-size:8px}
+.oracle .card-art img{transform:scale(1.08);transform-origin:50% 28%}
+.creations .card-art img{transform:scale(1.02);transform-origin:50% 24%}
+.divination .card-art img{transform:scale(1.03);transform-origin:50% 23%}
+.lab .card-art img{transform:scale(1.02);transform-origin:50% 22%}
+.card:hover .card-art img{transform:none}
+}
+@media(max-width:420px){
+.card{height:395px}
+.card-art{inset:7px 10px 38%}
+.copy h2{font-size:20px}
+}
