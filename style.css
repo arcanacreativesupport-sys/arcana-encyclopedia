@@ -69,3 +69,13 @@
 .hero-left{left:-45%;bottom:-9%}
 .hero-right{right:-44%;bottom:-10%}
 }
+
+/* Ver.3.4 — lift foreground illustrations on mobile */
+@media(max-width:760px){
+.hero-left{bottom:2%}
+.hero-right{bottom:1%}
+}
+@media(max-width:420px){
+.hero-left{bottom:3%}
+.hero-right{bottom:2%}
+}
