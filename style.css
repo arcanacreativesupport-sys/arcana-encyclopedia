@@ -135,3 +135,18 @@
 .card-art{inset:7px 10px 38%}
 .copy h2{font-size:20px}
 }
+
+/* Ver.4.2 — close the mobile illustration-to-title gap */
+@media(max-width:760px){
+.card{height:375px}
+.card-art{inset:6px 12px 34%}
+.card:after{background:linear-gradient(0deg,rgba(247,240,225,.99) 0 36%,rgba(247,240,225,.9) 44%,rgba(247,240,225,.05) 61%)}
+.copy{bottom:14px}
+.copy:before{margin-bottom:8px}
+.copy h2{margin-bottom:6px}
+.copy p{line-height:1.5;margin-bottom:7px}
+}
+@media(max-width:420px){
+.card{height:365px}
+.card-art{inset:6px 10px 34%}
+}
