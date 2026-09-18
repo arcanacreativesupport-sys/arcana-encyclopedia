@@ -150,3 +150,37 @@
 .card{height:365px}
 .card-art{inset:6px 10px 34%}
 }
+
+/* Ver.5 — About ARCANA as the encyclopedia colophon */
+.about{position:relative;min-height:150px;padding:30px 34px 28px;background:radial-gradient(circle at 82% 35%,#dbe6df 0,transparent 26%),linear-gradient(120deg,#eee5d2,#e4e6dc 55%,#d6e1dd);overflow:hidden}
+.about:before{content:"";position:absolute;right:82px;top:-72px;width:180px;height:180px;border:1px solid #9a865844;border-radius:50%;box-shadow:0 0 0 22px #9a865811,0 0 0 48px #9a86580b}
+.about-kicker{position:absolute;top:15px;left:18px;font-size:8px;letter-spacing:.22em;color:var(--gold)}
+.about .flower{font-size:38px;position:relative}
+.about h2{font-size:24px;margin-bottom:8px}
+.about p{font-size:13px;letter-spacing:.04em;margin-bottom:12px}
+.about strong{font-size:9px;font-weight:400;letter-spacing:.2em}
+.about .seal{position:relative;z-index:2}
+.about-detail{padding:85px 8% 90px;background:radial-gradient(circle at 15% 30%,#dbe5df88 0,transparent 23%),linear-gradient(145deg,#f5eee1,#e9e0ce)}
+.about-detail:after{content:"ARCANA";position:absolute;left:-18px;bottom:-32px;font-size:150px;letter-spacing:.12em;color:#8ca7a50b;white-space:nowrap}
+.about-detail .chapter-symbol{position:relative;z-index:2;width:74px;height:74px;font-size:29px;background:#f0e6d3}
+.about-detail h2{font-size:42px;letter-spacing:.18em;margin-bottom:8px}
+.about-detail .about-lead{font-size:17px!important;letter-spacing:.08em;margin:18px auto 38px!important}
+.about-columns{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:44px;max-width:760px;margin:0 auto;padding:28px 0;border-top:1px solid #b9a47d;border-bottom:1px solid #b9a47d;text-align:left}
+.about-columns p{font-size:13px;line-height:2.1;margin:0}
+.about-sign{position:relative;z-index:2;margin-top:38px}
+.about-sign span,.about-sign small{display:block;font-size:8px;letter-spacing:.24em;color:var(--gold)}
+.about-sign strong{display:block;margin:8px 0 7px;font-size:25px;font-style:italic;font-weight:400}
+@media(max-width:760px){
+.about{min-height:135px;margin-left:14px;margin-right:14px;padding:35px 22px 24px;gap:12px}
+.about-kicker{top:13px}
+.about .flower{font-size:28px}
+.about h2{font-size:18px}
+.about p{font-size:11px;line-height:1.6;margin-bottom:8px}
+.about .seal{flex-basis:46px;height:46px;font-size:20px}
+.about-detail{padding:65px 24px 72px}
+.about-detail h2{font-size:34px}
+.about-detail .about-lead{font-size:15px!important;line-height:1.9!important;margin-bottom:30px!important}
+.about-columns{grid-template-columns:1fr;gap:18px;padding:24px 5px}
+.about-columns p{font-size:12px;line-height:2}
+.about-detail:after{font-size:86px;bottom:-12px}
+}
