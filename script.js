@@ -1,0 +1,1 @@
+const d=document.getElementById('drawer');document.getElementById('menuBtn').onclick=()=>d.classList.add('open');document.getElementById('closeBtn').onclick=()=>d.classList.remove('open');d.querySelectorAll('a').forEach(a=>a.onclick=()=>d.classList.remove('open'));
