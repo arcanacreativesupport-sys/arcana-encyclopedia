@@ -79,3 +79,27 @@
 .hero-left{bottom:3%}
 .hero-right{bottom:2%}
 }
+
+/* Ver.4 — illustrated encyclopedia collection cards */
+.catalogue{gap:14px;padding:22px 14px 18px;background:linear-gradient(180deg,#f0e7d4,#f6efe1)}
+.card{height:500px;background:#f5eddd;transition:transform .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 24px #5b49301a}
+.card:after{background:linear-gradient(0deg,rgba(247,240,225,.99) 0 39%,rgba(247,240,225,.9) 47%,rgba(247,240,225,.08) 68%)}
+.card-art{inset:12px 10px 36%;display:block;background:none!important;color:inherit!important}
+.card-art img{width:100%;height:100%;object-fit:contain;object-position:center top;filter:saturate(.92) contrast(.97);transition:transform .35s ease}
+.card:hover .card-art img{transform:scale(1.025)}
+.num{z-index:5;top:22px;left:22px;font-size:22px;text-shadow:0 1px 0 #f7efdf}
+.copy{left:20px;right:20px;bottom:24px;text-align:center}
+.copy:before{content:"";display:block;width:32px;height:1px;background:var(--line);margin:0 auto 15px}
+.copy h2{font-size:21px;letter-spacing:.08em;margin-bottom:10px}
+.copy p{min-height:58px;font-size:11px;line-height:1.75;margin-bottom:13px}
+.copy strong{font-size:9px;letter-spacing:.2em}
+@media(max-width:760px){
+.catalogue{padding:24px 14px;gap:16px}
+.card{height:480px}
+.card:after{background:linear-gradient(0deg,rgba(247,240,225,.99) 0 38%,rgba(247,240,225,.92) 47%,rgba(247,240,225,.08) 67%)}
+.card-art{inset:12px 14px 35%}
+.copy{left:28px;right:28px;bottom:25px}
+.copy h2{font-size:23px}
+.copy p{min-height:auto;font-size:12px}
+}
