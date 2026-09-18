@@ -44,3 +44,28 @@
 .hero-left{left:-47%;bottom:-8%}
 .hero-right{right:-46%;bottom:-9%}
 }
+
+/* Ver.3.3 — tighter mobile book-cover composition */
+@media(max-width:760px){
+.hero{height:575px}
+.hero-compass{top:-4%;width:78%;opacity:.52}
+.hero-title{top:190px;left:4%;right:4%;padding:14px 4px 10px}
+.hero-title h1{font-size:35px;letter-spacing:.13em}
+.hero-title h2{font-size:17px;letter-spacing:.14em;margin:6px 0}
+.ornament{font-size:11px;margin:3px 0}
+.jp{font-size:13px;gap:8px}.jp span{width:24px}
+.sub{font-size:10px;line-height:1.5;margin:10px 0 13px}
+.hero-cta{padding:9px 15px;font-size:8px}
+.hero-left{width:110%;left:-43%;bottom:-10%}
+.hero-right{width:106%;right:-42%;bottom:-11%}
+.hero:after{height:74px}
+.catalogue{margin-top:-10px;padding-top:21px}
+}
+@media(max-width:420px){
+.hero{height:565px}
+.hero-title{top:185px}
+.hero-title h1{font-size:34px}
+.hero-title h2{font-size:16px}
+.hero-left{left:-45%;bottom:-9%}
+.hero-right{right:-44%;bottom:-10%}
+}
