@@ -184,3 +184,26 @@
 .about-columns p{font-size:12px;line-height:2}
 .about-detail:after{font-size:86px;bottom:-12px}
 }
+
+/* Ver.5.1 — ABOUT ARCANA as the fifth chapter cover */
+.about-chapter{display:block;position:relative;margin:0 14px 18px;min-height:310px;padding:0;border:1px solid var(--line);outline:1px solid #c6b18d;outline-offset:-7px;overflow:hidden;text-align:center;background:radial-gradient(ellipse at center,#f7efdf 0 30%,#eee5d3 67%,#e0e5dc 100%)}
+.about-chapter:before{content:"";position:absolute;z-index:2;inset:0;background:radial-gradient(ellipse at center,rgba(247,239,223,.97) 0 28%,rgba(247,239,223,.78) 48%,rgba(247,239,223,.12) 72%)}
+.about-art{position:absolute;z-index:1;bottom:-34%;width:42%;height:112%;object-fit:contain;opacity:.34;filter:saturate(.72) sepia(.08)}
+.about-art-left{left:-9%;object-position:left bottom}
+.about-art-right{right:-9%;object-position:right bottom}
+.about-chapter-copy{position:absolute;z-index:3;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:36px 22px}
+.about-chapter .about-kicker{position:static;margin-bottom:18px;font-size:9px;letter-spacing:.28em;color:var(--gold)}
+.about-mark{width:52px;height:52px;margin-bottom:16px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;background:#f2e8d7cc;color:var(--gold);font-size:21px}
+.about-chapter h2{margin:0 0 12px;font-size:31px;font-weight:400;letter-spacing:.15em}
+.about-chapter p{margin:0 0 22px;font-size:13px;letter-spacing:.08em}
+.about-chapter strong{font-size:9px;font-weight:400;letter-spacing:.22em;border-top:1px solid var(--line);padding-top:12px}
+@media(max-width:760px){
+.about-chapter{margin:0 14px 18px;min-height:285px;padding:0}
+.about-art{bottom:-23%;width:68%;height:92%;opacity:.28}
+.about-art-left{left:-27%}.about-art-right{right:-27%}
+.about-chapter-copy{padding:30px 18px}
+.about-chapter .about-kicker{margin-bottom:14px;font-size:8px}
+.about-mark{width:46px;height:46px;margin-bottom:13px;font-size:18px}
+.about-chapter h2{font-size:25px;margin-bottom:11px}
+.about-chapter p{max-width:270px;font-size:11px;line-height:1.8;margin-bottom:18px}
+}
