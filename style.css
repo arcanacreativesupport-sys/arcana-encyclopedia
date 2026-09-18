@@ -20,3 +20,27 @@
 .eyebrow{z-index:7}.vertical{z-index:7}.catalogue{margin-top:-25px;padding-top:36px}
 }
 @media(min-width:761px) and (max-width:1000px){.hero-title{left:20%;right:20%}.hero-left{left:-12%;width:60%}.hero-right{right:-12%;width:53%}}
+
+/* Ver.3.2 — compact mobile cover composition */
+@media(max-width:760px){
+.hero{height:660px}
+.hero-compass{top:-3%;width:82%;opacity:.52}
+.hero-title{top:205px;left:4%;right:4%;padding:20px 5px 14px}
+.hero-title h1{font-size:40px;letter-spacing:.13em}
+.hero-title h2{font-size:19px;letter-spacing:.14em;margin:8px 0}
+.ornament{margin:5px 0}.jp{font-size:14px;gap:10px}.jp span{width:28px}
+.sub{font-size:11px;line-height:1.55;margin:13px 0 17px}
+.hero-cta{padding:11px 18px}
+.hero-left{width:112%;left:-45%;bottom:-9%}
+.hero-right{width:108%;right:-44%;bottom:-10%}
+.hero:after{height:92px}
+.catalogue{margin-top:-14px;padding-top:25px}
+}
+@media(max-width:420px){
+.hero{height:650px}
+.hero-title{top:200px}
+.hero-title h1{font-size:38px}
+.hero-title h2{font-size:18px}
+.hero-left{left:-47%;bottom:-8%}
+.hero-right{right:-46%;bottom:-9%}
+}
